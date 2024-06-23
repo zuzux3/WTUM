@@ -1,6 +1,6 @@
 from opendatasets import download
 
-link = 'https://www.kaggle.com/datasets/utkarshsaxenadn/fast-food-classification-dataset'
+link = 'https://www.kaggle.com/datasets/carlosrunner/pizza-not-pizza'
 download(link)
 
 print('Download complete!')
