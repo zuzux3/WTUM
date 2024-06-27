@@ -1,12 +1,12 @@
 import gradio as gr
 
-def exampleFunc():
+def exampleFunc(image):
     return "Picture"
 
 demo = gr.Interface(
-    fn = exampleFunc
-    inputs='image'
+    fn = exampleFunc,
+    inputs='image',
     outputs='label'
 )
 
-demo.launch(share=True)
+demo.launch()
