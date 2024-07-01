@@ -8,6 +8,7 @@ def imgPreprocess(img):
         
     transform = transforms.Compose([
         transforms.Resize((256,256)),
+        transforms.CenterCrop((224, 224)),
         transforms.ToTensor(),
         transforms.Normalize(mean=[.485, .456, .406], std=[.229, .224, .225])
     ])
