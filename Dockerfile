@@ -6,4 +6,5 @@ COPY . /app
 
 RUN pip3 install --no-cache-dir -r requirements.txt
 
-CMD ["python", "notebook.py"]
+CMD ["python", "gui.py", "-e", "production"]
+ENTRYPOINT["python", "gui.py", "-e", "production"]
