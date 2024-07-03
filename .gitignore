@@ -4,3 +4,4 @@ wtum.pem
 wtum.cer
 *.tar.gz
 *.pth
+.github/workflows/ci-cd.yml
