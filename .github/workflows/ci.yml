@@ -20,7 +20,7 @@ jobs:
         DOCKER_PASSWORD: ${{secrets.DOCKER_PASSWORD}}
       run: docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD
     - name: Build the Docker image
-      run: docker build -t wtum
+      run: docker build -t wtum .
     - name: Push to Dockerhub
       run: docker push zuzavonpizza/wtum:latest
       
