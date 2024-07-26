@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Pull Docker image
-        run: docker push ${{ secrets.DOCKER_USERNAME }}/wtum:latest
+        run: docker pull ${{ secrets.DOCKER_USERNAME }}/wtum:latest
       - name: Delete Old docker container
         run: sudo docker rm -f wtum-container || true
       - name: Run Docker Container
