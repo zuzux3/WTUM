@@ -3,6 +3,5 @@ ec2-user@ec2-51-20-107-83.eu-north-1.compute.amazonaws.com/
 wtum.pem
 wtum.cer
 *.tar.gz
-*.pth
 .github/workflows/ci-cd.yml
 actions-runner/
