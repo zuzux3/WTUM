@@ -7,7 +7,7 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     steps:
       - name: Pull Docker image
         run: docker pull ${{ secrets.DOCKER_USERNAME }}/wtum:latest
