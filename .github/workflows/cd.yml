@@ -17,6 +17,6 @@ jobs:
       - name: Pull Docker image
         run: docker pull ${{ secrets.DOCKER_USERNAME }}/wtum:latest
       - name: Delete Old docker container
-        run: sudo docker rm -f wtum-container || true
+        run: docker rm -f wtum-container || true
       - name: Run Docker Container
-        run: sudo docker run -d -p 8080:8080 --name wtum-container ${{ secrets.DOCKER_USERNAME }}/wtum:latest
+        run: docker run -d -p 8080:8080 --name wtum-container ${{ secrets.DOCKER_USERNAME }}/wtum:latest
